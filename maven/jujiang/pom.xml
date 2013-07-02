@@ -7,9 +7,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<struts2.version>2.3.1.2</struts2.version>
-	</properties>
-	<dependencies>
-		<dependency>
+		<spring3.version>3.0.5.RELEASE</spring3.version>
+		<hibernate.version>3.6.7.Final</hibernate.version>
+	</properties> 
+	<dependencies>   
+	 	<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>2.5</version>
@@ -38,45 +40,25 @@
 			<artifactId>struts2-json-plugin</artifactId>
 			<version>${struts2.version}</version>
 		</dependency>
-		
+
 		<!-- spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>3.2.3.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
-			<version>3.0.5.RELEASE</version>
+			<version>${spring3.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
-			<version>3.0.5.RELEASE</version>
+			<version>${spring3.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
-			<version>3.0.5.RELEASE</version>
+			<version>3.2.3.RELEASE</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-web</artifactId>
-			<version>3.0.5.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-config</artifactId>
-			<version>3.0.5.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-taglibs</artifactId>
-			<version>3.0.5.RELEASE</version>
-		</dependency>
-		
-		
+
+
 		<!-- hibernate -->
 		<dependency>
 			<groupId>net.sf.ehcache</groupId>
@@ -86,15 +68,26 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>3.6.7.Final</version>
+			<version>${hibernate.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
-		
-		
+		<dependency>
+			<groupId>com.googlecode.genericdao</groupId>
+			<artifactId>dao-hibernate</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!-- 
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.1</version>
+		</dependency> -->
+
+
 		<!-- mysql -->
 		<dependency>
 			<groupId>net.sourceforge.jtds</groupId>
@@ -108,8 +101,8 @@
 			<version>5.1.18</version>
 			<scope>runtime</scope>
 		</dependency>
-		
-		
+
+
 		<!-- core -->
 		<dependency>
 			<groupId>com.lee</groupId>
@@ -117,12 +110,19 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		
-<!-- 		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>2.5</version>
+<!-- 
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
 		</dependency> -->
-		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>jujiang</finalName>
