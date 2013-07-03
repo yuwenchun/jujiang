@@ -1,8 +1,8 @@
-package com.lee.jujiang.app.user.service.impl;
+package com.lee.jujiang.auth.user.service.impl;
 
-import com.lee.jujiang.app.user.dao.UserDao;
-import com.lee.jujiang.app.user.service.UserService;
-import com.lee.jujiang.model.User;
+import com.lee.jujiang.auth.user.dao.UserDao;
+import com.lee.jujiang.auth.user.model.User;
+import com.lee.jujiang.auth.user.service.UserService;
 
 public class UserServiceImpl implements UserService {
 	

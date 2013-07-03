@@ -11,12 +11,12 @@
   http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 	<bean id="userService"
-		class="com.lee.jujiang.app.user.service.impl.UserServiceImpl">
+		class="com.lee.jujiang.auth.user.service.impl.UserServiceImpl">
 		<property name="dao" ref="userDao" />
 	</bean>
 	
 	<bean id="userDao"
-		class="com.lee.jujiang.app.user.dao.impl.UserDaoImpl">
+		class="com.lee.jujiang.auth.user.dao.impl.UserDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
 

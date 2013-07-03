@@ -1,8 +1,8 @@
 package com.lee.action;
 
 import com.lee.bean.InjectedUtil;
-import com.lee.jujiang.app.user.service.UserService;
-import com.lee.jujiang.model.User;
+import com.lee.jujiang.auth.user.model.User;
+import com.lee.jujiang.auth.user.service.UserService;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class TestAction extends ActionSupport {

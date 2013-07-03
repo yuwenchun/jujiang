@@ -1,4 +1,4 @@
-package com.lee.jujiang.app.user.action;
+package com.lee.jujiang.auth.user.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -8,7 +8,6 @@ public class UserAdmin extends ActionSupport{
 
 	@Override
 	public String execute() throws Exception {
-		
 		
 		
 		

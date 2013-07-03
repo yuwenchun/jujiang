@@ -3,8 +3,8 @@ package com.lee.jiang.user;
 import org.junit.Test;
 
 import com.lee.core.test.AbstractTestCase;
+import com.lee.jujiang.app.user.model.User;
 import com.lee.jujiang.app.user.service.UserService;
-import com.lee.jujiang.model.User;
 
 public class UserServiceTest extends AbstractTestCase<UserService> {
 	

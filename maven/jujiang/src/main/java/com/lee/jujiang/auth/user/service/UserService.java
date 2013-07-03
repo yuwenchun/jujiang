@@ -1,6 +1,6 @@
-package com.lee.jujiang.app.user.service;
+package com.lee.jujiang.auth.user.service;
 
-import com.lee.jujiang.model.User;
+import com.lee.jujiang.auth.user.model.User;
 
 public interface UserService {
 	

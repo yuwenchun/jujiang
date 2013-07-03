@@ -30,7 +30,7 @@
 		<property name="dataSource" ref="datasource" />
 		<property name="packagesToScan">
 			<list>
-                <value>com.lee.jujiang.model</value>
+                <value>com.lee.jujiang.app</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">

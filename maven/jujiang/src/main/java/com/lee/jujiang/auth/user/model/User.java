@@ -1,4 +1,4 @@
-package com.lee.jujiang.model;
+package com.lee.jujiang.auth.user.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,7 +12,8 @@ import org.hibernate.annotations.GenericGenerator;
 @Table(name="jiang_user")
 public class User  implements java.io.Serializable {
 	
-	
+	private static final long serialVersionUID = 1L;
+
 	private String id;
 	
 	private String name;
